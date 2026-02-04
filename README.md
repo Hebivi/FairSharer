@@ -1,17 +1,25 @@
 # FairSharer
 
-![PyPI version](https://img.shields.io/pypi/v/fairsharer.svg)
-[![Documentation Status](https://readthedocs.org/projects/fairsharer/badge/?version=latest)](https://fairsharer.readthedocs.io/en/latest/?version=latest)
-
 A Python package for fair value sharing.
 
 * PyPI package: https://pypi.org/project/fairsharer/
 * Free software: MIT License
 * Documentation: https://fairsharer.readthedocs.io.
 
-## Features
+## What it does
 
-* TODO
+In each iteration, the highest value gives a fraction (`share`) of its value to each of its left and right neighbor.
+
+## Installation
+
+To install FairSharer from this GitHub Repository, do:
+```
+git clone https://github.com/Hebivi/FairSharer.git
+cd FairSharer
+python -m pip install .
+# or on mac:
+python3 -m pip install .
+```
 
 ## Credits
 

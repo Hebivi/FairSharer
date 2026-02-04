@@ -1,22 +1,7 @@
-#!/usr/bin/env python
-import pytest
-
-"""Tests for `fairsharer` package."""
-
-# from fairsharer import fairsharer
+from fairsharer.fairsharer import fair_sharer
 
 
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
-
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyfeldroy/cookiecutter-pypackage')
-
-
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
-    # from bs4 import BeautifulSoup
-    # assert 'GitHub' in BeautifulSoup(response.content).title.string
+# Test to see if the function gives the right values, tested with 1 and 2 iteration(s)
+def test_fair_sharer():
+    assert fair_sharer([0, 1000, 800, 0], 1) == [100, 800, 900, 0]
+    assert fair_sharer([0, 1000, 800, 0], 2) == [100, 890, 720, 90]

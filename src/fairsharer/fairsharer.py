@@ -23,6 +23,7 @@ Integer to set the number of iterations
         sharing = max_value * share
 
         n = len(values)
+        # Neighbor indices in circulat way
         left = (max_index - 1) % n
         right = (max_index + 1) % n
 
